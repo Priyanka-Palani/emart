@@ -73,8 +73,8 @@ const Cart = ({cart, setCart}) => {
                     <div className='info'>
                     <h4>{curElm.cat}</h4>
                     <h3>{curElm.Name}</h3>
-                    <p>Price: ${curElm.price}</p>
-                    <p>Total: ${curElm.price * curElm.qty}</p>
+                    <p>Price: Rs.{curElm.price}</p>
+                    <p>Total: Rs.{curElm.price * curElm.qty}</p>
                     </div>
                     <div className='quantity'>
                       <button onClick={() => incqty (curElm)}>+</button>
@@ -96,7 +96,7 @@ const Cart = ({cart, setCart}) => {
             cart.length > 0 && 
             <>
             <div className='Total'>
-              <h4>Sub Total: {total}</h4>
+              <h4>Sub Total: Rs.{total}</h4>
             </div>
             <button>checkout</button>
             </>
